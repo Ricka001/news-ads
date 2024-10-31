@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#imagePH {
+  background-image: url("https://th.bing.com/th/id/OIP.1p2jRQ90B-RVizy-OrO2cQHaJ0?rs=1&pid=ImgDetMain");
+  background-size: cover;
+}
