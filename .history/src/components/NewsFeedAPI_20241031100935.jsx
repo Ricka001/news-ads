@@ -16,13 +16,6 @@ export default async function NewsFeedAPI() {
   //   console.log(articles);
   return (
     <>
-      <Head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5206967219759359"
-          crossorigin="anonymous"
-        ></script>
-      </Head>
       {articles.map((item) => {
         if ((item.name, item.author, item.content) !== `[Removed]`) {
           return (
@@ -30,6 +23,13 @@ export default async function NewsFeedAPI() {
               className="bg-slate-500 flex flex-col items-center m-4 justify-center align-middle text-center"
               key={item.id}
             >
+              <Head>
+                <script
+                  async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5206967219759359"
+                  crossorigin="anonymous"
+                ></script>
+              </Head>
               <div className="bg-slate-700 m-5 flex flex-col items-center">
                 <p className="bg-slate-600 p-2 m-1">
                   source: {item.source.name}

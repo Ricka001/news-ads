@@ -3,7 +3,7 @@ import NewsFeedAPI from "@/components/NewsFeedAPI";
 export default function HomePage() {
   return (
     <>
-      <h1 className="flex flex-col items-center">Ads, Ads and more Ads</h1>
+      <h1 className="flex flex-col">Ads, Ads and more Ads</h1>
       <NewsFeedAPI />
     </>
   );

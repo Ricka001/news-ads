@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { revalidatePath } from "next/cache";
-import Head from "next/head";
 
 export default async function NewsFeedAPI() {
   const news = await fetch(
@@ -16,13 +15,6 @@ export default async function NewsFeedAPI() {
   //   console.log(articles);
   return (
     <>
-      <Head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5206967219759359"
-          crossorigin="anonymous"
-        ></script>
-      </Head>
       {articles.map((item) => {
         if ((item.name, item.author, item.content) !== `[Removed]`) {
           return (
